@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+body{
+  font-family: 'Mukta', sans-serif;
+	height:100vh;
+	min-height:550px;
+	background-image: url(http://www.planwallpaper.com/static/images/Free-Wallpaper-Nature-Scenes.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+}
+a{
+  text-decoration:none;
+  color:white;
+}
+input{
+  color: #08091b;
+}
+.login-reg-panel{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	text-align:center;
+    width:70%;
+	right:0;left:0;
+    margin:auto;
+    height:400px;
+    box-shadow: 0 0 8px 3px #00c3ff;
+    background-color: #08091b;
+    border-radius: 20px;
+}
+.white-panel{
+    background-color:#10122d;
+    height:550px;
+    position:absolute;
+    top:-50px;
+    width:50%;
+    right:calc(50% - 50px);
+    transition:.3s ease-in-out;
+    z-index:0;
+    box-shadow: 0 0 8px 3px #00c3ff;
+    border-radius: 20px;
+}
+.login-reg-panel input[type="radio"]{
+    position:relative;
+    display:none;
+}
+.login-reg-panel{
+    color:white;
+}
+.login-info-box{
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    left:0;
+    position:absolute;
+    text-align:left;
+}
+.register-info-box{
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    right:0;
+    position:absolute;
+    text-align:left;
+
+}
+.right-log{right:50px !important;}
+
+.login-show,
+.register-show{
+    z-index: 1;
+    display:none;
+    opacity:0;
+    transition:0.3s ease-in-out;
+    color:white;
+    text-align:left;
+    padding:50px;
+}
+.show-log-panel{
+    display:block;
+    opacity:0.9;
+}
+.login-show input[type="email"], .login-show input[type="password"],.login-show input[type="text"]{
+    width: 100%;
+    display: block;
+    margin:20px 0;
+    padding: 15px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+    border-radius: 100px;
+}
+.login-show input[type="button"] {
+    max-width: 150px;
+    width: 100%;
+    background: #444444;
+    color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    float:right;
+    cursor:pointer;
+}
+
+.login-show a{
+    display:inline-block;
+    padding:10px 0;
+}
+
+.register-show input[type="email"], .register-show input[type="password"]{
+  width: 100%;
+  display: block;
+  margin:20px 0;
+  padding: 15px;
+  border: 1px solid #b5b5b5;
+  outline: none;
+}
+.credit {
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    color: #3B3B25;
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 99;
+}
+a{
+  text-decoration:none;
+  color:white;
+}
+
+.login-show input[type="button"] {
+    display: inline-block;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgba(57,100,208,1);
+  background: -moz-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(57,100,208,1)), color-stop(100%, rgba(45,193,201,1)));
+  background: -webkit-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+  background: -o-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+  background: -ms-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+  background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+    padding: 0 35px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    animation-delay: 2.4s
+  }
+  @media only screen and (max-width: 480px) {
+    .login-show input[type="button"] {
+      padding: 0 20px;
+      height: 40px;
+      line-height: 36px;
+      font-size: 13px;
+      border: 2px solid #3d3f69;
+    }
+  }
+  .login-show input[type="button"]:hover {
+  background: rgba(45,193,201,1);
+  background: -moz-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(45,193,201,1)), color-stop(100%, rgba(57,100,208,1)));
+  background: -webkit-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+  background: -o-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+  background: -ms-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+  background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+    color: #fff;
+
+  }
+
+.login-reg-panel #label-login {
+    display: inline-block;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgba(57,100,208,1);
+  background: -moz-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(57,100,208,1)), color-stop(100%, rgba(45,193,201,1)));
+  background: -webkit-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+  background: -o-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+  background: -ms-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+  background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+    padding: 0 35px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    animation-delay: 2.4s
+  }
+  @media only screen and (max-width: 480px) {
+    .login-reg-panel #label-login {
+      padding: 0 20px;
+      height: 40px;
+      line-height: 36px;
+      font-size: 13px;
+      border: 2px solid #3d3f69;
+    }
+  }
+  .login-reg-panel #label-login:hover {
+  background: rgba(45,193,201,1);
+  background: -moz-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(45,193,201,1)), color-stop(100%, rgba(57,100,208,1)));
+  background: -webkit-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+  background: -o-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+  background: -ms-linear-gradient(left, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+  background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 100%);
+    color: #fff;
+
+  }
