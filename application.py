@@ -36,7 +36,7 @@ a=False
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-    resNews = requests.get("https://newsapi.org/v2/everything?q=finance&from=2020-01-11&to=2020-01-30&sortBy=popularity&apiKey=16c14d73a1a24a76a5145fcda13637df")
+    resNews = requests.get("https://newsapi.org/v2/everything?q=finance&from=2020-06-11&to=2020-06-30&sortBy=popularity&apiKey=16c14d73a1a24a76a5145fcda13637df")
     data = resNews.json()
     news = []
     for i in range(1):
